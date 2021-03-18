@@ -23,6 +23,7 @@
 - Data Binding
 - View Binding
 - Retrofit2
+- Lottie
 
 #### 유닛테스트에 사용된 기술
 - Mockk (For Unit Test)
