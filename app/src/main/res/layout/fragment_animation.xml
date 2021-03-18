@@ -7,27 +7,25 @@
 
         <variable
             name="viewModel"
-            type="com.gyeongmun.base.dagger.features.main.notifications.NotificationsViewModel" />
+            type="com.gyeongmun.base.dagger.features.main.animation.AnimationViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".features.main.notifications.NotificationsFragment">
+        tools:context=".features.main.animation.AnimationFragment">
 
-        <TextView
-            android:id="@+id/text_notifications"
-            android:layout_width="match_parent"
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="@{viewModel.text}"
-            android:textAlignment="center"
-            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_repeatCount="10"
+            app:lottie_repeatMode="restart"
+            app:lottie_fileName="52580-scooter-riding.json" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

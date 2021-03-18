@@ -3,8 +3,8 @@ package com.gyeongmun.base.dagger.features.main
 import com.gyeongmun.base.dagger.di.qualifier.FragmentScoped
 import com.gyeongmun.base.dagger.features.main.dashboard.DashboardFragment
 import com.gyeongmun.base.dagger.features.main.dashboard.DashboardFragmentModule
-import com.gyeongmun.base.dagger.features.main.notifications.NotificationsFragment
-import com.gyeongmun.base.dagger.features.main.notifications.NotificationsFragmentModule
+import com.gyeongmun.base.dagger.features.main.animation.AnimationFragment
+import com.gyeongmun.base.dagger.features.main.animation.AnimationFragmentModule
 import com.gyeongmun.base.dagger.features.main.search.SearchFragment
 import com.gyeongmun.base.dagger.features.main.search.SearchFragmentModule
 import dagger.Module
@@ -26,7 +26,7 @@ abstract class MainActivityBindingModule {
 
     @FragmentScoped
     @ContributesAndroidInjector(
-        modules = [NotificationsFragmentModule::class]
+        modules = [AnimationFragmentModule::class]
     )
-    abstract fun notificationsFragment(): NotificationsFragment
+    abstract fun animationFragment(): AnimationFragment
 }

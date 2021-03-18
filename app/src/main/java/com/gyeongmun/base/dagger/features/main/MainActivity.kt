@@ -13,7 +13,7 @@ import com.gyeongmun.base.dagger.R
 import com.gyeongmun.base.dagger.base.BaseActivity
 import com.gyeongmun.base.dagger.databinding.ActivityMainBinding
 import com.gyeongmun.base.dagger.features.main.dashboard.DashboardFragment
-import com.gyeongmun.base.dagger.features.main.notifications.NotificationsFragment
+import com.gyeongmun.base.dagger.features.main.animation.AnimationFragment
 import com.gyeongmun.base.dagger.features.main.search.SearchFragment
 
 const val STACK_FRAGMENT_NAVIGATION = false
@@ -36,9 +36,9 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>(
                         DashboardFragment.TAG,
                         DashboardFragment()
                     )
-                    R.id.navigation_notifications -> setFragment(
-                        NotificationsFragment.TAG,
-                        NotificationsFragment()
+                    R.id.navigation_animation -> setFragment(
+                        AnimationFragment.TAG,
+                        AnimationFragment()
                     )
                 }
 
@@ -50,7 +50,7 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>(
             // menu should be considered as top level destinations.
             val appBarConfiguration = AppBarConfiguration(
                 setOf(
-                    R.id.navigation_search, R.id.navigation_dashboard, R.id.navigation_notifications
+                    R.id.navigation_search, R.id.navigation_dashboard, R.id.navigation_animation
                 )
             )
             setupActionBarWithNavController(navController, appBarConfiguration)
@@ -70,7 +70,7 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>(
 
         val search = manager.findFragmentByTag(SearchFragment.TAG)
         val dashboard = manager.findFragmentByTag(DashboardFragment.TAG)
-        val notification = manager.findFragmentByTag(NotificationsFragment.TAG)
+        val animation = manager.findFragmentByTag(AnimationFragment.TAG)
 
         // Hide all Fragment
         if (search != null) {
@@ -79,8 +79,8 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>(
         if (dashboard != null) {
             ft.hide(dashboard)
         }
-        if (notification != null) {
-            ft.hide(notification)
+        if (animation != null) {
+            ft.hide(animation)
         }
 
         // Show  current Fragment
@@ -93,9 +93,9 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>(
                 if (dashboard != null) {
                     ft.show(dashboard)
                 }
-            NotificationsFragment.TAG ->
-                if (notification != null) {
-                    ft.show(notification)
+            AnimationFragment.TAG ->
+                if (animation != null) {
+                    ft.show(animation)
                 }
         }
 

@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.gyeongmun.base.dagger.features.main.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_animation"
+        android:name="com.gyeongmun.base.dagger.features.main.animation.AnimationFragment"
+        android:label="@string/title_animation"
+        tools:layout="@layout/fragment_animation" />
 </navigation>
