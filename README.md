@@ -19,7 +19,7 @@
 - 의존성 주입 : Dagger Android Support
 - 옵저버 : LiveData
 - 비동기 처리 : Coroutines
-- 비동치 처리 : Flow
+- 비동기 처리 : Flow
 - 뷰 바인딩 : Data Binding
 - 뷰 바인딩 : View Binding
 - 네트워크 : Retrofit2
