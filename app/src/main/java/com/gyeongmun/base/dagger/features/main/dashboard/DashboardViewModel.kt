@@ -2,7 +2,7 @@ package com.gyeongmun.base.dagger.features.main.dashboard
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.gyeongmun.base.dagger.base.BaseViewModel
+import com.gyeongmun.base.dagger.base.databinding.BaseViewModel
 import javax.inject.Inject
 
 class DashboardViewModel @Inject constructor() :

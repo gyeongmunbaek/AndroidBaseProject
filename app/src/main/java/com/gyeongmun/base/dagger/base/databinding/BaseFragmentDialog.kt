@@ -1,4 +1,4 @@
-package com.gyeongmun.base.dagger.base
+package com.gyeongmun.base.dagger.base.databinding
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable

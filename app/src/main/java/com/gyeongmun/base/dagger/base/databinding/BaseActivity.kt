@@ -1,4 +1,4 @@
-package com.gyeongmun.base.dagger.base
+package com.gyeongmun.base.dagger.base.databinding
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes
