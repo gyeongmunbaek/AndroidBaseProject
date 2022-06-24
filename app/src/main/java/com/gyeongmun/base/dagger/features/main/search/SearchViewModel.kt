@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.gyeongmun.base.dagger.base.BaseViewModel
+import com.gyeongmun.base.dagger.base.databinding.BaseViewModel
 import com.gyeongmun.base.dagger.data.WeatherRepository
 import com.gyeongmun.base.dagger.network.response.CityResponse
 import kotlinx.coroutines.flow.collect

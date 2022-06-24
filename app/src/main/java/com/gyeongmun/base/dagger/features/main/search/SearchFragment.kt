@@ -3,7 +3,7 @@ package com.gyeongmun.base.dagger.features.main.search
 import android.os.Bundle
 import android.view.View
 import com.gyeongmun.base.dagger.R
-import com.gyeongmun.base.dagger.base.BaseFragment
+import com.gyeongmun.base.dagger.base.databinding.BaseFragment
 import com.gyeongmun.base.dagger.databinding.FragmentHomeBinding
 
 class SearchFragment : BaseFragment<SearchViewModel, FragmentHomeBinding>(

@@ -1,4 +1,4 @@
-package com.gyeongmun.base.dagger.base
+package com.gyeongmun.base.dagger.base.databinding
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

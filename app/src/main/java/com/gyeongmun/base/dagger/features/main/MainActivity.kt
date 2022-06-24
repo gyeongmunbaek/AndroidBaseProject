@@ -10,7 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.gyeongmun.base.dagger.R
-import com.gyeongmun.base.dagger.base.BaseActivity
+import com.gyeongmun.base.dagger.base.databinding.BaseActivity
 import com.gyeongmun.base.dagger.databinding.ActivityMainBinding
 import com.gyeongmun.base.dagger.features.main.dashboard.DashboardFragment
 import com.gyeongmun.base.dagger.features.main.animation.AnimationFragment
